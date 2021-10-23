@@ -12,24 +12,35 @@ class VisitCard extends StatelessWidget {
         elevation: 0.0,
       ),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          // crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: <Widget>[CircleAvatar(
-          radius: 70.0,
-          backgroundImage: AssetImage('assets/portrait.jpeg'),),
-          Card(
-            child: Text('Harry Potter',
-             style: TextStyle(fontFamily: 'JosefinSans'),
-             ),
-          ),
-          Card(
-            child: Text('test',
-             style: TextStyle(
-               fontFamily: 'JosefinSans',
+        child: Padding(
+          padding: EdgeInsets.all(15.0),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            // crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: <Widget>[CircleAvatar(
+            radius: 70.0,
+            backgroundImage: AssetImage('assets/portrait.jpeg'),
             ),
-          )),
-        ]
+            SizedBox(height: 10.0,),
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Card(
+                child: Text('Harry Potter',
+                 style: TextStyle(fontFamily: 'JosefinSans'),
+                 ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Text('test',
+                 style: TextStyle(
+                   fontFamily: 'JosefinSans',
+                ),
+              )),
+            ),
+          ]
+          ),
         ), 
         ),
     );
