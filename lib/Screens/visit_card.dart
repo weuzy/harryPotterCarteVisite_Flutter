@@ -30,15 +30,16 @@ class VisitCard extends StatelessWidget {
                  ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Card(
-                child: Text('test',
-                 style: TextStyle(
-                   fontFamily: 'JosefinSans',
-                ),
-              )),
-            ),
+            Card(
+                margin: EdgeInsets.only(top:30.0, bottom:15.0),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('Il porte des lunettes rondes à monture noire et une fine cicatrice en forme éclair sur le front, souvent cachée par ses mèches. Harry est assez timide et plutôt modeste.',
+                   style: TextStyle(
+                     fontFamily: 'JosefinSans',
+                  ),
+              ),
+                )),
           ]
           ),
         ), 
