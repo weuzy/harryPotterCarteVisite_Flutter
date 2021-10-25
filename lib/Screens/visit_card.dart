@@ -55,6 +55,16 @@ class VisitCard extends StatelessWidget {
                     ),
                     color: Colors.transparent,
                 ),
+                RaisedButton(
+                  child: Text('En savoir plus',
+                    style: TextStyle(
+                      fontFamily: 'JosefinSans',
+                      color: Colors.white70,
+                    ),
+                  ),
+                  color: Colors.blueGrey,
+                  onPressed: () {  },
+                ),
               ]),
         ),
       ),
