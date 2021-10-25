@@ -44,5 +44,5 @@ class Details extends StatelessWidget {
          ),
       ),
     );
-  }
+  } 
 }

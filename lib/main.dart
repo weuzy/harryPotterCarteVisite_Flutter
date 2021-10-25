@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-// import 'Screens/visit_card.dart';
-import 'Screens/details.dart';
+import 'Screens/visit_card.dart';
 
 void main() => runApp(MyApp());
 
@@ -12,7 +11,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Ma carte de visite',
-      home: Details(),
+      home: VisitCard(),
     );
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'details.dart';
 
 class VisitCard extends StatelessWidget {
   @override
@@ -56,6 +57,15 @@ class VisitCard extends StatelessWidget {
                     color: Colors.transparent,
                 ),
                 RaisedButton(
+                  onPressed: () { 
+                    Navigator.push(
+                      context, MaterialPageRoute(
+                        builder: (BuildContext context){
+                          return Details();
+                        }
+                      ),
+                    );
+                  },
                   child: Text('En savoir plus',
                     style: TextStyle(
                       fontFamily: 'JosefinSans',
@@ -63,7 +73,6 @@ class VisitCard extends StatelessWidget {
                     ),
                   ),
                   color: Colors.blueGrey,
-                  onPressed: () {  },
                 ),
               ]),
         ),
